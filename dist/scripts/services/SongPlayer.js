@@ -49,6 +49,12 @@ var playSong = function(song) {
           currentBuzzObject.bind('timeupdate', function() {
          $rootScope.$apply(function() {
              SongPlayer.currentTime = currentBuzzObject.getTime();
+             	
+             var duration = currentBuzzObject.getDuration();
+                if (SongPlayer.currentTime === duration) {
+                    console.log("End of song");
+                    SongPlayer.next();
+}
          });
      });
      
