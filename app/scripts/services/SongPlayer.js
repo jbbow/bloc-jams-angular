@@ -52,7 +52,6 @@ var playSong = function(song) {
              	
              var duration = currentBuzzObject.getDuration();
                 if (SongPlayer.currentTime === duration) {
-                    console.log("End of song");
                     SongPlayer.next();
 }
          });
