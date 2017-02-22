@@ -90,6 +90,9 @@ var playSong = function(song) {
  * @desc Pause current song
  * @param {Object} song
  */
+         
+         
+
        
       SongPlayer.pause = function(song) {
                song = song || SongPlayer.currentSong;
